@@ -365,3 +365,67 @@ p {
     text-decoration: none;
     font-weight: 800;
 }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 576px) {
+
+    /* Fix logo image overflow */
+    .fxt-logo img {
+        max-width: 100% !important;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Adjust padding around form */
+    .fxt-content {
+        padding: 20px;
+    }
+
+    /* Center text properly */
+    .fxt-header p,
+    .fxt-footer p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Stack social buttons vertically */
+    .fxt-socials {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .fxt-socials li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* padding: 10px; */
+        font-size: 14px;
+        width: 100%;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .fxt-socials li a i {
+        font-size: 18px;
+    }
+
+    /* Make the input fields responsive */
+    /* .form-control { */
+        /* width: 100%;
+    }
+
+    .fxt-btn-fill {
+        width: 100%;
+        padding: 10px;
+    } */
+
+    /* Keep container full width */
+    /* .fxt-bg-color {
+        width: 100%;
+    } */
+}
